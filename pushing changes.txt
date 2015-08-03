@@ -1,0 +1,12 @@
+cd to /Desktop/Programming/projects/projects-gh-pages
+
+**
+if it doesnt show /Desktop/Programming/projects/projects-gh-pages (master)  (no (master)after url)
+-open git gui
+-open directory 
+-open bash
+
+git checkout -b gh-pages to switch branch
+git add *
+git commit -m "adasda"
+git push origin gh-pages

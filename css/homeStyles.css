@@ -1,0 +1,111 @@
+body{
+  height:100%;  
+  background: url(../img/background.jpg) no-repeat center center fixed; /*put img in body so that it wnot slide with carousel */
+  -webkit-background-size: cover; /*so img covers screen*/
+  -moz-background-size: cover;/*so img covers screen*/
+  -o-background-size: cover;/*so img covers screen*/
+  background-size: cover;/*so img covers screen*/
+  font-size: 220% !important;
+
+
+}
+.container-small {
+    padding-left: 12vw;
+    padding-right: 12vw;
+}
+.container-wide {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+h1{
+  font-size: 300% ;
+  text-transform: uppercase;
+}
+h2{
+    font-size: 200% !important;
+    text-transform: uppercase;
+}
+h3{
+    font-size: 175% !important;
+    text-transform: uppercase;
+}
+
+h4{
+    font-size: 160% !important;
+    
+}
+
+.table td {
+   text-align: center;   
+}
+.table th {
+   text-align: center;   
+}
+
+.newBg{
+	 background: url(../img/computer.jpg)no-repeat fixed;
+  -webkit-background-size: cover; /*so img covers screen*/
+  -moz-background-size: cover;/*so img covers screen*/
+  -o-background-size: cover;/*so img covers screen*/
+  background-size: cover;/*so img covers screen*/
+}
+.center{
+  text-align: center;
+}
+.bg-light-gray {
+    background-color: #F1F1F1;
+}
+.margin{
+  margin-top:200px;
+  margin-bottom:170px;
+}
+.section {
+  margin: 30px;
+  padding: 70px 0;
+}
+.bg-white{
+  background-color: #fafafa;
+}
+.about {
+  position: relative;
+  text-align: center;
+}
+
+.introText {
+  background-color: white;
+  font-size:3vw;
+}
+
+/* ------------------ HERO UNIT ------------------ */
+.hero-unit {
+  position: relative;
+  height: 100%;
+}
+.hero-unit.hero-light .hero-content .hero-text .hero-heading,
+.hero-unit.hero-light .hero-content .hero-text p {
+  color: #fff;
+}
+.hero-unit .hero-bg-pattern {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+  opacity: 0.2;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/noise_lines_@2X.png?1342797527');
+  background-repeat: repeat;
+}
+.hero-unit .hero-content {
+
+
+}
+
+.glyth{
+
+  text-align: center;
+  font-size: 30px;
+  padding-top:60px;
+  color:yellow;
+}
+
+.smallFont{
+  font-size: 33px;
+}
