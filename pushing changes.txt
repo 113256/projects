@@ -1,7 +1,7 @@
 cd to /Desktop/Programming/projects/projects-gh-pages
 
 **
-if it doesnt show /Desktop/Programming/projects/projects-gh-pages (master)  (no (master)after url)
+if it doesnt show /Desktop/Programming/projects/projects-gh-pages (master)  (if no (master)after url)
 -open git gui
 -open directory 
 -open bash
