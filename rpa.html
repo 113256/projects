@@ -22,6 +22,15 @@
 
 
 <body class="fullscreen-image-background">
+<a name = "top"></a>
+<div class="sidenav">
+  <p><b>RPA Projects List</b></p>
+  <a href="#top">About</a>
+  <a href="#Stock">Stock & Crypto Consolidation</a>
+  <a href="#GenericFramework">UiPath Generic Framework</a>
+  <a href="#">Contact</a>
+</div>
+
 
 	<div class = "belowNav">
 	<div class = "navbar navbar-default navbar-fixed-top"> <!--navbar-static-top will make it disappear if you scroll horizontally -->
@@ -70,11 +79,36 @@
 	<div class = "margin"></div>
 	
 
-		<div id="" class="section bg-light-gray">
+			<div id="" class="section bg-light-gray">
+			<div class="container-small">
+				<div id = "" class="section-heading">
+					<h2 class = "center">RPA Portfolio</h2>					
+				</div>
+				Welcome to my RPA Portfolio. Use the menu on the left side to navigate through my projects
+				<div class="section">
+					<table class="table table-bordered">
+						 <tbody>
+						 	<tr>
+						      <th scope="row">UiPath Forum Profile</th>
+						      <td><a href = "https://forum.uipath.com/u/jack.chan/summary">Link</a></td>
+						    </tr>
+						    <tr>
+						      <th scope="row">UiPath Marketplace Profile</th>
+						      <td><a href = "https://marketplace.uipath.com/profile/jack-chan54">Link</a></td>
+						    </tr>
+						  </tbody>
+					</table>
+				</div>
+	
+			</div>
+			</div>
+
+
+		<div id="Stock" class="section bg-light-gray">
 			<div class="container-small">
 				<div id = "" class="section-heading">
 
-					<h2 class = "center">Generate Stocks And Crypto Summary In Excel</h2>
+					<h2 class = "center">Consolidate Stocks And Crypto Summary In Excel</h2>
 	
 					
 				</div>
@@ -126,7 +160,7 @@
 						      <td>Web browser (Chrome)</td>
 						    </tr>
 						    <tr>
-						      <th scope="row">RPA Techniques</th>
+						      <th scope="row">Type of RPA</th>
 						      <td>Data scraping from multiple websites, Data consolidation</td>
 						    </tr>
 						  </tbody>
@@ -142,58 +176,166 @@
 							</div>
 							<div class = "col-md-6">
 								<p>This process lets the user specify a list of Tickers (Stock/Crypto) for the robot. When the user runs this process, an excel table will popup, the user can fill in this table and click "OK".
-								<img class = "" src = "img/stocksRPA-screenshot.JPG" width = "100%"></p>
+								</p>
+								<video width="90%" height="90%"  autoplay="autoplay" loop="loop" muted="muted">
+								  <source src="video/Add Tickers.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+								</video>
 								<p>The robot will then store this table in a JSON file. (If the JSON file already contains tickers, it will append to it) </p>
 
 								<p>When subprocess 2 runs, the robot will look at this list to know which stocks / cryptocurrency tickers to look at.</p>
 							</div>
 						</div>
-
-
-						<p><b>Demo</b></p>
-						<video width="90%" height="90%" controls>
-						  <source src="video/Add Tickers.mp4" type="video/mp4">
-						Your browser does not support the video tag.
-						</video>
-
-
-
+						<br>
 
 						<h4>Subprocess 2 - Generate summary of tickers</h4>
-						
+						<img class = "img-thumbnail" src = "img/stocksRPA-sub2-flowchart.JPG" height = "50%" width = "100%" style = "margin-bottom: 15px">
 							<div class = "row">
-							<div class = "col-md-6">
-								<img class = "img-thumbnail" src = "img/stocksRPA-sub2-flowchart.JPG" width = "100%" style = "margin-bottom: 15px">
+								<div class = "col-md-6">
+									<p>The robot will go through the list of tickers in the JSON file. For each ticker - if the type = Stock, the robot will extract details from Nasdaq website, if type = Crypto, the robot will extract details from CoinMarketCap website. All the details and charts will be consolidated in an excel file.</p>
 
-								<img class = "" src = "img/stocksRPA-sub2-outputMail.JPG" width = "100%" />
-							</div>
-							<div class = "col-md-6">
-								<p>The robot will go through the list of tickers in the JSON file. For each ticker - if the type = Stock, the robot will extract details from Nasdaq website, if type = Crypto, the robot will extract details from CoinMarketCap website. All the details and charts will be consolidated in an excel file.</p>
+								</div>
+								<div class = "col-md-6">
+									<video width="90%" height="90%"  autoplay="autoplay" loop="loop" muted="muted">
+								  <source src="video/Get Stock Summary.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+								</video>
+									
+								</div>
+							</div>	
+							<div class = "row">	
+								<div class = "col-md-6">
+									<p>Then it will generate an email (on the right) containing a summary of the details; the excel file  that the robot also generated is attached in the email. The below video shows the details of the excel file</p>
 
-								<p>Then it will generate an email (on the left) containing a summary of the details; the excel file  is that the robot also generated in attached in the email. The below video shows the details of the excel file</p>
-
-								<video width="90%" height="90%" autoplay="autoplay" loop="loop" muted="muted">
-						  <source src="video/StockRPA-OutputExcelDemo.mp4" type="video/mp4">
- 
+									<video width="90%" height="90%" autoplay="autoplay" loop="loop" muted="muted">
+							  		<source src="video/StockRPA-OutputExcelDemo.mp4" type="video/mp4">
+									
+								</div>
+								<div class = "col-md-6">
+									<img class = "" src = "img/stocksRPA-sub2-outputMail.JPG" width = "100%" />
+									
+	 
+								</div>
 							</div>
-							</div>
-							
 						
-						<p><b>Demo</b></p>
-						<video width="90%" height="90%" controls>
-						  <source src="video/StockRPA-Sub2-Demo.mp4" type="video/mp4">
-						Your browser does not support the video tag.
-						</video>
-					
-
-						
-
 					
 					</div>
 	
 				</div>
 			</div>
 		</div>
+
+
+
+
+		<div id="GenericFramework" class="section bg-light-gray">
+			<div class="container-small">
+				<div id = "" class="section-heading">
+
+					<h2 class = "center">Generic UiPath Framework</h2>
+	
+					
+				</div>
+				<div class="section">
+					
+					<div class = "row">
+						
+
+
+						<p>Generic framework applicable to any process, and can be built on top of your own processes. Easy to configure.</p>
+
+						<h4>Details</h4>
+						<table class="table table-bordered">
+						 <tbody>
+						 	<tr>
+						      <th scope="row">Main tool</th>
+						      <td>UiPath</td>
+						    </tr>
+						    <tr>
+						      <th scope="row">Type of RPA</th>
+						      <td>Generic framework</td>
+						    </tr>
+						  </tbody>
+						</table>		
+
+
+						<div class = "alert alert-info"><p>Source Code: <a href = "https://github.com/113256/RPA-StockAndCryptoSummary/tree/master">https://github.com/113256/RPA-StockAndCryptoSummary/tree/master</a></p></div>
+		
+					
+					<div class = "col-lg-6">
+						<img class = "" src = "img/GenericFramework-Diagram.JPG" width = "100%" />
+					</div>
+
+					<div class = "col-lg-6">
+						<ul>
+							<li>Adding a generic framework allows you to separate generic steps and process-specific steps</li>
+							<li>Applicable to all processes, only requires changing config file between different processes</li>
+							<li>Make your process more modular by adding an additional layer (to separate process-specific and non process-specific logic)</li>
+							<ul>
+								<b>Generic steps include</b>
+								<li>Reading config file</li>
+								<li>System Health checks</li>
+								<li>Archiving files</li>
+								<b>Process specific steps include</b>
+								<li>Reading input file / queue data</li>
+								<li>Reading DB</li>
+								<li>Running main process flow</li>
+
+							</ul>
+							<li>Can be built on top of your own main frameworks / sequences</li>
+						</ul>
+					</div>
+
+					</div>
+
+					<h4>Features</h4>
+					<div class = "row">
+						<b>(1) Healthcheck</b>
+						<p>
+								Before the main process starts, the robot will run a "healthcheck" in the "Initialization" stage to ensure that all the required files, folders and credentials exist. The list of files/folders/credentials can be configured inside the program
+							</p>
+						<div class = "col-lg-6">
+							
+							
+							<p>After the healthcheck is completed, the robot will send a summary email stating whether the healthcheck is successful or not. If its successful, it can continue to the main process, otherwise, it will end</p>
+						</div>
+						<div class = "col-lg-6">
+							<img class = "" src = "img/healthcheckWithFramework.JPG" width = "100%" />
+						</div>
+					</div>
+	
+				</div>
+				<div class = "row">
+					
+					<div class = "col-lg-6">
+						Healthcheck success email
+						<img class = "" src = "img/Healthcheck Pass.JPG" width = "100%" />
+					</div>
+					<div class = "col-lg-6">
+						Healthcheck fail email
+						<img class = "" src = "img/Healthcheck Fail.JPG" width = "100%" />
+					</div>
+				</div>
+				<div class = "row">
+					<br>
+					<b>(2) Summary Email</b>
+					<p>
+							Before the main process starts, the robot will run a "healthcheck" in the "Initialization" stage to ensure that all the required files, folders and credentials exist. The list of files/folders/credentials can be configured inside the program
+						</p>
+					<div class = "col-lg-6">
+						
+						
+						<p>After the healthcheck is completed, the robot will send a summary email stating whether the healthcheck is successful or not. If its successful, it can continue to the main process, otherwise, it will end</p>
+					</div>
+					<div class = "col-lg-6">
+						<img class = "" src = "img/healthcheckWithFramework.JPG" width = "100%" />
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
 
 
 		<div id="features" class="section bg-white">
