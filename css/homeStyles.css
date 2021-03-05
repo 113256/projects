@@ -56,11 +56,11 @@ h4{
     background-color: #F1F1F1;
 }
 .margin{
-  margin-top:200px;
-  margin-bottom:170px;
+  margin-top:100px;
+  margin-bottom:20px;
 }
 .section {
-  margin: 30px;
+  margin: 2%;
   padding: 20px 0;
 }
 .bg-white{
@@ -117,7 +117,7 @@ h4{
   width: 11%; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
-  top: 30%; /* Stay at the top */
+  top: 10%; /* Stay at the top */
   left: 2%;
   background-color: #F1F1F1; /* Black */
   overflow-x: hidden; /* Disable horizontal scroll */
