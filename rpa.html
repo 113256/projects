@@ -5,6 +5,18 @@
 		<title>Jack Chan</title>
 		
 		<meta name = "viewport" content = "width=device-width, initial-scale=1.0" >
+		<style type="text/css">
+			
+		[data-new-window] {
+		    display: none;
+		}
+
+		td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+		</style>
 		<!--use min file or else it will take a long time to load -->
 		<link href = "css/bootstrap.min.css" rel = "stylesheet">
 		<!--custom styles -->
@@ -15,6 +27,24 @@
 	
 		<script src="js/jquery-1.12.4.min.js"></script>
 		<!--<script src="js/jquery.mobile-1.4.5.min.js"></script>-->
+		<script type="text/javascript">
+			
+			function open_in_new_window(id, new_page_title, features) {
+		    	var new_window;
+
+			    if(features !== undefined && features !== '') {
+			    new_window = window.open('', '_blank', features);
+			    }
+			    else {
+			        new_window = window.open('', '_blank');
+			    }
+
+			    var html_contents = document.getElementById(id);
+			    if(html_contents !== null) {
+			        new_window.document.write('<!doctype html><html><head><title>' + new_page_title + '</title><meta charset="UTF-8" /></head><body>' + html_contents.innerHTML + '</body></html>');
+			    }
+			}
+		</script>
 
 </head>
 
@@ -26,6 +56,7 @@
 <div class="sidenav">
   <p><b>RPA Projects List</b></p>
   <a href="#top">Contact / Links</a>
+  <a href="#projectsList">UiPath Automation Projects List</a>
   <a href="#Stock">Stock & Crypto Consolidation</a>
   <a href="#GenericFramework">UiPath Generic Framework</a>
   <a href="#Selenium">Selenium</a>
@@ -48,7 +79,7 @@
 						but this will disappear if screen is smaller if didn't add a responsive button
 						-->
 						<!-- active means it will be highlighted in the bar-->
-						<li class = "" ><a href = "index.html">Home</a></li>
+						<li class = "" ><a href = "rpa.html">Home</a></li>
 						
 						
 						<!--button as dropdown -->
@@ -90,16 +121,23 @@
 						 <tbody>
 						 	<tr>
 						      <th scope="row">UiPath Forum Profile</th>
-						      <td><a href = "https://forum.uipath.com/u/jack.chan/summary">Link</a></td>
+						      <td>Among most active users. Ranked top 10-15 in terms of solutions provided</td>
+						      <td><a href = "https://forum.uipath.com/u/jack.chan/summary">Profile Link</a></td>
 						    </tr>
 						    <tr>
 						      <th scope="row">UiPath Marketplace Profile</th>
-						      <td><a href = "https://marketplace.uipath.com/profile/jack-chan54">Link</a></td>
+						      <td>Created and uploaded multiple templates/frameworks/snippets/reusable components. 10k+ total downloads</td>
+						      <td><a href = "https://marketplace.uipath.com/profile/jack-chan54">Profile Link</a></td>
 						    </tr>
 						    <tr>
 						      <th scope="row">Email</th>
 						      <td>jackchan715@hotmail.com</td>
 						    </tr>
+						    <tr>
+						      <th scope="row">Resume + Job references</th>
+						      <td><a href = "jack chan 2023 with reference english.pdf" download>Download</a></td>
+						    </tr>
+						    
 						  </tbody>
 					</table>
 				</div>
@@ -108,8 +146,107 @@
 			</div>
 
 
+		<div id="projectsList" class="section bg-light-gray">
+					<div class="container-small">
+						<div id = "" class="section-heading">
+							<h2 class = "center">UiPath Automation Projects List</h2>
+						</div>
+						<div class="section">
+							<div class = "alert alert-success"><p>Some of my personal / freelance projects</p></div>
+							
+							<div class = "row">
+
+
+								<table>
+								  <tr>
+								    <th>Project</th>
+								    <th>Description</th>
+								    <th>Video</th>
+								  </tr>
+								  <tr>
+								    <td>Facebook marketplace automation</td>
+								    <td>Fully automate Facebook marketplace listing creation, auto reply, chrome profile creation, login, language/location change and more...</td>
+								    <td><a href="#" onclick="open_in_new_window('html_contents4', 'MyTitle', 'location=1,status=1,toolbar=1,scrollbars=1,resizeable=1,width=500,height=250');">Watch Video Here</a>
+									<div id="html_contents4" data-new-window> <!-- data-new-window is important -->
+									    <video controls style="width: 100%; height: auto;">
+									        <source src="video/fb marketplace final 1.mp4" type="video/mp4" />
+									    </video>
+									</div></td>
+								  </tr>
+								  <tr>
+								    <td>Cost Center Allocation</td>
+								    <td>(SAP Process) Allocation of costs from one cost center to another and verify result</td>
+								    <td><a href="#" onclick="open_in_new_window('html_contents', 'MyTitle', 'location=1,status=1,toolbar=1,scrollbars=1,resizeable=1,width=500,height=250');">Watch Video Here</a>
+									<div id="html_contents" data-new-window> <!-- data-new-window is important -->
+									    <video controls style="width: 100%; height: auto;">
+									        <source src="video/Cost Allocation.mp4" type="video/mp4" />
+									    </video>
+									</div></td>
+								  </tr>
+								  <tr>
+								    <td>Processing Fee settlement</td>
+								    <td>(SAP Process) Download data from sap, consolidate excel and generate voucher, upload voucher and perform batch approval in SAP</td>
+								    <td><a href="#" onclick="open_in_new_window('html_contents1', 'MyTitle', 'location=1,status=1,toolbar=1,scrollbars=1,resizeable=1,width=500,height=250');">Watch Video Here</a>
+									<div id="html_contents1" data-new-window> <!-- data-new-window is important -->
+									    <video controls style="width: 100%; height: auto;">
+									        <source src="video/Processing Fee settlement.mp4" type="video/mp4" />
+									    </video>
+									</div></td>
+								  </tr>
+								  <tr>
+								    <td>Rating resume based on job description</td>
+								    <td>Scrape Job listing, then scrape list of resumes. For each resume use OpenAI to provide rating and analysis based on job listing and resume details</td>
+								    <td>									<a href="#" onclick="open_in_new_window('html_contents2', 'MyTitle', 'location=1,status=1,toolbar=1,scrollbars=1,resizeable=1,width=500,height=250');">Watch Video Here</a>
+									<div id="html_contents2" data-new-window> <!-- data-new-window is important -->
+									    <video controls style="width: 100%; height: auto;">
+									        <source src="video/rating resume based on job description.mp4" type="video/mp4" />
+									    </video>
+									</div></td>
+								  </tr>
+								  <tr>
+								    <td>Insurance Underwriting using OpenAI</td>
+								    <td>Given an excel file containing multiple rows of claimer health history, UiPath will call OpenAI API to provide (1) decision to approve/decline the application (2) along with a reason </td>
+								    <td><a href="#" onclick="open_in_new_window('html_contents3', 'MyTitle', 'location=1,status=1,toolbar=1,scrollbars=1,resizeable=1,width=500,height=250');">Watch Video Here</a>
+									<div id="html_contents3" data-new-window> <!-- data-new-window is important -->
+									    <video controls style="width: 100%; height: auto;">
+									        <source src="video/insurance underwriting.mp4" type="video/mp4" />
+									    </video>
+									</div></td>
+								  </tr>
+								  
+								   <tr>
+								    <td>Job listing scraping</td>
+								    <td>Scrape job listings details from Xing.com based on input file, and the scrape company email/phone number from Google search results</td>
+								    <td><a href="#" onclick="open_in_new_window('html_contents5', 'MyTitle', 'location=1,status=1,toolbar=1,scrollbars=1,resizeable=1,width=500,height=250');">Watch Video Here</a>
+									<div id="html_contents5" data-new-window> <!-- data-new-window is important -->
+									    <video controls style="width: 100%; height: auto;">
+									        <source src="video/xing demo.mp4" type="video/mp4" />
+									    </video>
+									</div></td>
+								  </tr>
+								   <tr>
+								    <td>Flight ticket listing scraping</td>
+								    <td>Scrape flight listing details based on input file from MakeMyTrip.com</td>
+								    <td><a href="#" onclick="open_in_new_window('html_contents6', 'MyTitle', 'location=1,status=1,toolbar=1,scrollbars=1,resizeable=1,width=500,height=250');">Watch Video Here</a>
+									<div id="html_contents6" data-new-window> <!-- data-new-window is important -->
+									    <video controls style="width: 100%; height: auto;">
+									        <source src="video/makemytrip demo w subtitles.mp4" type="video/mp4" />
+									    </video>
+									</div></td>
+								  </tr>
+								</table>	
+
+								
+							</div>
+
+						</div>
+					
+					
+					</div>
+		</div>
 		<div id="Stock" class="section bg-light-gray">
 			<div class="container-small">
+
 				<div id = "" class="section-heading">
 
 					<h2 class = "center">Consolidate Stocks And Crypto Summary In Excel</h2>
@@ -119,7 +256,8 @@
 				<div class="section">
 					
 					<div class = "row">
-						
+						<div class = "alert alert-success"><p>This is another one of my personal projects, but I 
+						have included a detailed walkthrough of the process here!</p></div>
 
 
 						<p>Generate an excel summary for a list of crpytocurrency and stock tickers. The tickers are specified by the user.</p>
@@ -181,7 +319,7 @@
 							<div class = "col-md-6">
 								<p>This process lets the user specify a list of Tickers (Stock/Crypto) for the robot. When the user runs this process, an excel table will popup, the user can fill in this table and click "OK".
 								</p>
-								<video width="90%" height="90%"  autoplay="autoplay" loop="loop" muted="muted">
+								<video  controls='true' width="90%" height="90%"  autoplay="autoplay" loop="loop" muted="muted">
 								  <source src="video/Add Tickers.mp4" type="video/mp4">
 								Your browser does not support the video tag.
 								</video>
@@ -200,7 +338,7 @@
 
 								</div>
 								<div class = "col-md-6">
-									<video width="90%" height="90%"  autoplay="autoplay" loop="loop" muted="muted">
+									<video controls='true' width="90%" height="90%"  autoplay="autoplay" loop="loop" muted="muted">
 								  <source src="video/Get Stock Summary.mp4" type="video/mp4">
 								Your browser does not support the video tag.
 								</video>
@@ -211,7 +349,7 @@
 								<div class = "col-md-6">
 									<p>Then it will generate an email (on the right) containing a summary of the details; the excel file  that the robot also generated is attached in the email. The below video shows the details of the excel file</p>
 
-									<video width="90%" height="90%" autoplay="autoplay" loop="loop" muted="muted">
+									<video controls='true' width="90%" height="90%" autoplay="autoplay" loop="loop" muted="muted">
 							  		<source src="video/StockRPA-OutputExcelDemo.mp4" type="video/mp4">
 									
 								</div>
@@ -244,7 +382,8 @@
 					
 					<div class = "row">
 						
-
+						<div class = "alert alert-success"><p>This is the framework (built on top of UiPath's own REFramework) I use throughout 
+						almost all my projects. The one shown here is the base framework but for each project I will extend it to fit the client requirements  </p></div>
 
 						<p>Generic framework applicable to any process, and can be built on top of your own processes. Easy to configure.</p>
 
@@ -263,7 +402,7 @@
 						</table>		
 
 
-						<div class = "alert alert-info"><p>Source Code: <a href = "https://github.com/113256/UiPath-GenericFramework">https://github.com/113256/UiPath-GenericFramework</a></p></div>
+						<div class = "alert alert-info"><p><a href = "https://marketplace.uipath.com/listings/generic-framework">https://marketplace.uipath.com/listings/generic-framework</a></p></div>
 		
 					
 					<div class = "col-lg-6">
@@ -345,7 +484,7 @@
 					<hr/>
 				</div>
 				<div class="section">
-					
+					<div class = "alert alert-success"><p>Very old project..you can ignore this </p></div>
 					<div class = "row">
 						<div class = "alert alert-info">This is only a demo so there are limit choices and criteria you can choose from</div>
 						<div class = "alert alert-danger">Requires latest version of Google Chrome</div>
