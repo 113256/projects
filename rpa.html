@@ -179,11 +179,11 @@ video {
 							
 							<div class = "row">
 							
-							<h3><i>OpenAI and Langchain</i></h3>
+							<h3><i>Generative AI</i></h3>
 								<ul>
-									<li>OpenAI integration with RPA processes</li>
-									<li>Integrated OpenAI with D-ID to turn user-uploaded images into talking avatar capable of answering user questions</li>
-									<li>Integrated OpenAI with Langchain to create Chatbot capable of answer questions about uploaded PDFs</li>
+									<li>Chatbot integration with "talking avatar"</li>
+									<li>Chatbot that can answer questions on uploaded documents</li>
+									<li>Extract the data you want from documents, and generate insights and analysis</li>
 								</ul>
 								<table>
 								  <tr>
@@ -197,7 +197,7 @@ video {
 								    <td>Chatbot that combine OpenAI and text-to-video tech</td>
 								    <td>By combining OpenAI's language processing capabilities with D-ID's text-to-video technology, this tool lets you upload a photo and turn it into a "Speaking portrait", allowing you to interact with it!</td>
 									<td>NodeJS, OpenAI, D-ID</td>
-								    <td><a href="#" onclick="open_in_new_window('html_contents_did', 'OpenAI and D-ID', 'location=1,status=1,toolbar=1,scrollbars=1,resizeable=1,width=500,height=250');">Watch Video Here</a>
+								    <td><a onclick="open_in_new_window('html_contents_did', 'OpenAI and D-ID', 'location=1,status=1,toolbar=1,scrollbars=1,resizeable=1,width=500,height=250');">Watch Video Here</a>
 									<div id="html_contents_did" data-new-window> <!-- data-new-window is important -->
 									    <video controls style="width: 100%; height: auto;">
 									        <source src="video/openAI and d-id.mp4" type="video/mp4" />
@@ -208,15 +208,163 @@ video {
 								    <td>Upload documents and ask questions about these documents</td>
 								    <td>Web application where you can upload any document (of ANY size/page count), and ask questions about these documents. The questions and answers will be stored on the web app</td>
 									<td>NodeJS, OpenAI, Langchain, SQL</td>
-								    <td><a href="#" onclick="open_in_new_window('html_contents_langchain', 'MyTitle', 'location=1,status=1,toolbar=1,scrollbars=1,resizeable=1,width=500,height=250');">Watch Video Here</a>
+								    <td><a onclick="open_in_new_window('html_contents_langchain', 'MyTitle', 'location=1,status=1,toolbar=1,scrollbars=1,resizeable=1,width=500,height=250');">Watch Video Here</a>
 									<div id="html_contents_langchain" data-new-window> <!-- data-new-window is important -->
 									    <video controls style="width: 100%; height: auto;">
 									        <source src="video/langchain app.mp4" type="video/mp4" />
 									    </video>
 									</div></td>
-								  </tr>						
+								  </tr>			
+
+								<tr>
+								    <td>Generative AI Tool for Insurance</td>
+								    <td>1. Automatically extract key information from uploaded theft forms, and generate verdict (approve/decline) as well as give a reason for the verdict. 2. Allow claims officers to ask questions about the claim and about the policy via chatbot.   3. Automatically generate an email reply to the claimant with the results of the claims analysis</td>
+									<td>NodeJS, OpenAI, Langchain</td>
+								    <td><a onclick="open_in_new_window('html_contents_insurance', 'MyTitle', 'location=1,status=1,toolbar=1,scrollbars=1,resizeable=1,width=500,height=250');">Watch Video Here</a>
+									<div id="html_contents_insurance" data-new-window> <!-- data-new-window is important -->
+									    <video controls style="width: 100%; height: auto;">
+									        <source src="video/insurance ai demo.mp4" type="video/mp4" />
+									    </video>
+									</div></td>
+								  </tr>	
+								  
 								</table>
 							
+	
+								
+								<h3><i>Recruitment / HR Automation</i></h3>
+								<img class = "" src = "img/HR.PNG" width = "100%" />
+								
+								<table>
+								  <tr>
+								    <th>Project</th>
+								    <th>Description</th>
+									<th>Technologies</th>
+								    <th>Video</th>
+								</tr>
+								  
+								   <tr>
+								    <td>Extract fields from candidate CV and generate fixed-format company CV</td>
+								    <td>For each CV in input folder, extract key fields into Google Sheets, after the sheet is verified and marked "Confirmed", the robot will generated a fixed-format word CV based on the details in the Google Sheet</td>
+									<td>UiPath, OpenAI, VBA, Google Sheets</td>
+								    <td><a onclick="open_in_new_window('html_contents_cv', 'MyTitle', 'location=1,status=1,toolbar=1,scrollbars=1,resizeable=1,width=500,height=350');">Watch Video Here</a>
+									<div id="html_contents_cv" data-new-window> <!-- data-new-window is important -->
+									    <video controls style="width: 100%; height: auto;">
+									        <source src="video/CV Reformat and generation.mp4" type="video/mp4" />
+									    </video>
+									</div></td>
+								  </tr>
+								  <tr>
+								    <td>Job Candidate scraping and messaging</td>
+								    <td>Scrape job candidate details from Xing.com based on input file, and based on certain conditions, send message to these candidates</td>
+									<td>UiPath, Python, JavaScript</td>
+								    <td><a onclick="open_in_new_window('html_contents8', 'MyTitle', 'location=1,status=1,toolbar=1,scrollbars=1,resizeable=1,width=500,height=250');">Watch Video Here</a>
+									<div id="html_contents8" data-new-window> <!-- data-new-window is important -->
+									    <video controls style="width: 100%; height: auto;">
+									        <source src="video/xing-talentmanagerSub.mp4" type="video/mp4" />
+									    </video>
+									</div></td>
+								  </tr>
+								  <tr>
+								    <td>Job listing scraping</td>
+								    <td>Scrape job listings details from Xing.com based on input file, and the scrape company email/phone number from Google search results</td>
+									<td>UiPath, Python, JavaScript</td>
+								    <td><a onclick="open_in_new_window('html_contents5', 'MyTitle', 'location=1,status=1,toolbar=1,scrollbars=1,resizeable=1,width=500,height=250');">Watch Video Here</a>
+									<div id="html_contents5" data-new-window> <!-- data-new-window is important -->
+									    <video controls style="width: 100%; height: auto;">
+									        <source src="video/xing demo.mp4" type="video/mp4" />
+									    </video>
+									</div></td>
+								  </tr>
+								   
+								</table>	
+
+								<h3><i>Travel Agency Automation</i></h3>
+								<img class = "" src = "img/Travel.PNG" width = "60%" />
+								<table>
+								  <tr>
+								    <th>Project</th>
+								    <th>Description</th>
+									<th>Technologies</th>
+								    <th>Video</th>
+								  </tr>
+								  <tr>
+								    <td>Flights dashboard generation</td>
+								    <td>Scrape all flights based on criteria and number of days and write to excel dashboard powered by VBA</td>
+									<td>UiPath, Python, JavaScript</td>
+								    <td><a onclick="open_in_new_window('html_contents_traveldashboard', 'MyTitle', 'location=1,status=1,toolbar=1,scrollbars=1,resizeable=1,width=500,height=400');">Watch Video Here</a>
+									<div id="html_contents_traveldashboard" data-new-window> <!-- data-new-window is important -->
+									    <video controls style="width: 100%; height: auto;">
+									        <source src="video/Travel route dashboard generation.mp4" type="video/mp4" />
+									    </video>
+									</div></td>
+								  </tr>
+								  <tr>
+								    <td>Flight and hotel scraping for Customer</td>
+								    <td>Scrape flights/hotels data for customer based on input file, write results to Google Sheets</td>
+									<td>UiPath, Python, JavaScript</td>
+								    <td><a onclick="open_in_new_window('html_contents_ps', 'MyTitle', 'location=1,status=1,toolbar=1,scrollbars=1,resizeable=1,width=500,height=250');">Watch Video Here</a>
+									<div id="html_contents_ps" data-new-window> <!-- data-new-window is important -->
+									    <video controls style="width: 100%; height: auto;">
+									        <source src="video/personalized hotel and flight scraping.mp4" type="video/mp4" />
+									    </video>
+									</div></td>
+								  </tr>
+								   <tr>
+								    <td>Flight ticket listing scraping</td>
+								    <td>Scrape flight listing details based on input file from MakeMyTrip.com</td>
+									<td>UiPath, Python, JavaScript</td>
+								    <td><a onclick="open_in_new_window('html_contents6', 'MyTitle', 'location=1,status=1,toolbar=1,scrollbars=1,resizeable=1,width=500,height=250');">Watch Video Here</a>
+									<div id="html_contents6" data-new-window> <!-- data-new-window is important -->
+									    <video controls style="width: 100%; height: auto;">
+									        <source src="video/makemytrip demo w subtitles.mp4" type="video/mp4" />
+									    </video>
+									</div></td>
+								  </tr>
+								 </table>
+
+
+								<h3><i>Digital Marketing Automation</i></h3>
+								<img class = "" src = "img/digital.PNG" width = "80%" />
+								<table>
+								  <tr>
+								    <th>Project</th>
+								    <th>Description</th>
+									<th>Technologies</th>
+								    <th>Video</th>
+								  </tr>
+								  <tr>
+								    <td>VIdeo Demo Pending...</td>
+								    <td></td>
+									<td>UiPath, OpenAI, Google Sheets</td>
+								    <td></td>
+								  </tr>
+								  			  
+								</table>
+								
+								<h3><i>Facebook Marketplace Automation</i></h3>
+								<img class = "" src = "img/fb.PNG" width = "60%" />
+								<table>
+								  <tr>
+								    <th>Project</th>
+								    <th>Description</th>
+									<th>Technologies</th>
+								    <th>Video</th>
+								  </tr>
+								  <tr>
+								    <td>Facebook marketplace automation</td>
+								    <td>Fully automate Facebook marketplace listing creation, auto reply, chrome profile creation, login, language/location change and more...</td>
+									<td>UiPath, JavaScript</td>
+								    <td><a href="#" onclick="open_in_new_window('html_contents4', 'MyTitle', 'location=1,status=1,toolbar=1,scrollbars=1,resizeable=1,width=500,height=250');">Watch Video Here</a>
+									<div id="html_contents4" data-new-window> <!-- data-new-window is important -->
+									    <video controls style="width: 100%; height: auto;">
+									        <source src="video/fb marketplace final 1.mp4" type="video/mp4" />
+									    </video>
+									</div></td>
+								  </tr>
+								  			  
+								</table>
+								
 								<h3><i>SAP Automation</i></h3>
 								<ul>
 									<li>Finance pipeline - fee settlement / cost center allocation / purchase order / accounts payable etc.</li>
@@ -253,125 +401,6 @@ video {
 									    </video>
 									</div></td>
 								  </tr>						
-								</table>	
-								
-								<h3><i>Recruitment / HR Automation</i></h3>
-								<img class = "" src = "img/HR.PNG" width = "100%" />
-								
-								<table>
-								  <tr>
-								    <th>Project</th>
-								    <th>Description</th>
-									<th>Technologies</th>
-								    <th>Video</th>
-								</tr>
-								  
-								   <tr>
-								    <td>Extract fields from candidate CV and generate fixed-format company CV</td>
-								    <td>For each CV in input folder, extract key fields into Google Sheets, after the sheet is verified and marked "Confirmed", the robot will generated a fixed-format word CV based on the details in the Google Sheet</td>
-									<td>UiPath, OpenAI, VBA, Google Sheets</td>
-								    <td><a href="#" onclick="open_in_new_window('html_contents_cv', 'MyTitle', 'location=1,status=1,toolbar=1,scrollbars=1,resizeable=1,width=500,height=350');">Watch Video Here</a>
-									<div id="html_contents_cv" data-new-window> <!-- data-new-window is important -->
-									    <video controls style="width: 100%; height: auto;">
-									        <source src="video/CV Reformat and generation.mp4" type="video/mp4" />
-									    </video>
-									</div></td>
-								  </tr>
-								  <tr>
-								    <td>Job Candidate scraping and messaging</td>
-								    <td>Scrape job candidate details from Xing.com based on input file, and based on certain conditions, send message to these candidates</td>
-									<td>UiPath, Python, JavaScript</td>
-								    <td><a href="#" onclick="open_in_new_window('html_contents8', 'MyTitle', 'location=1,status=1,toolbar=1,scrollbars=1,resizeable=1,width=500,height=250');">Watch Video Here</a>
-									<div id="html_contents8" data-new-window> <!-- data-new-window is important -->
-									    <video controls style="width: 100%; height: auto;">
-									        <source src="video/xing-talentmanagerSub.mp4" type="video/mp4" />
-									    </video>
-									</div></td>
-								  </tr>
-								  <tr>
-								    <td>Job listing scraping</td>
-								    <td>Scrape job listings details from Xing.com based on input file, and the scrape company email/phone number from Google search results</td>
-									<td>UiPath, Python, JavaScript</td>
-								    <td><a href="#" onclick="open_in_new_window('html_contents5', 'MyTitle', 'location=1,status=1,toolbar=1,scrollbars=1,resizeable=1,width=500,height=250');">Watch Video Here</a>
-									<div id="html_contents5" data-new-window> <!-- data-new-window is important -->
-									    <video controls style="width: 100%; height: auto;">
-									        <source src="video/xing demo.mp4" type="video/mp4" />
-									    </video>
-									</div></td>
-								  </tr>
-								   
-								</table>	
-
-								<h3><i>Travel Agency Automation</i></h3>
-								<img class = "" src = "img/Travel.PNG" width = "60%" />
-								<table>
-								  <tr>
-								    <th>Project</th>
-								    <th>Description</th>
-									<th>Technologies</th>
-								    <th>Video</th>
-								  </tr>
-								  <tr>
-								    <td>Flights dashboard generation</td>
-								    <td>Scrape all flights based on criteria and number of days and write to excel dashboard powered by VBA</td>
-									<td>UiPath, Python, JavaScript</td>
-								    <td><a href="#" onclick="open_in_new_window('html_contents_traveldashboard', 'MyTitle', 'location=1,status=1,toolbar=1,scrollbars=1,resizeable=1,width=500,height=400');">Watch Video Here</a>
-									<div id="html_contents_traveldashboard" data-new-window> <!-- data-new-window is important -->
-									    <video controls style="width: 100%; height: auto;">
-									        <source src="video/Travel route dashboard generation.mp4" type="video/mp4" />
-									    </video>
-									</div></td>
-								  </tr>
-								  <tr>
-								    <td>Flight and hotel scraping for Customer</td>
-								    <td>Scrape flights/hotels data for customer based on input file, write results to Google Sheets</td>
-									<td>UiPath, Python, JavaScript</td>
-								    <td><a href="#" onclick="open_in_new_window('html_contents_ps', 'MyTitle', 'location=1,status=1,toolbar=1,scrollbars=1,resizeable=1,width=500,height=250');">Watch Video Here</a>
-									<div id="html_contents_ps" data-new-window> <!-- data-new-window is important -->
-									    <video controls style="width: 100%; height: auto;">
-									        <source src="video/personalized hotel and flight scraping.mp4" type="video/mp4" />
-									    </video>
-									</div></td>
-								  </tr>
-								   <tr>
-								    <td>Flight ticket listing scraping</td>
-								    <td>Scrape flight listing details based on input file from MakeMyTrip.com</td>
-									<td>UiPath, Python, JavaScript</td>
-								    <td><a href="#" onclick="open_in_new_window('html_contents6', 'MyTitle', 'location=1,status=1,toolbar=1,scrollbars=1,resizeable=1,width=500,height=250');">Watch Video Here</a>
-									<div id="html_contents6" data-new-window> <!-- data-new-window is important -->
-									    <video controls style="width: 100%; height: auto;">
-									        <source src="video/makemytrip demo w subtitles.mp4" type="video/mp4" />
-									    </video>
-									</div></td>
-								  </tr>
-								 </table>
-
-
-								<h3><i>Digital Marketing Automation</i></h3>
-								<ul>
-									<li>Facebook marketplace automation, Facebook account creation, Chrome profile batch creation etc...</li>
-									<li>Batch Google ad image and content scraping to Google Bigquery</li>
-									<li>Bulk ad and ad campaign creation</li>
-								</ul>
-								<table>
-								  <tr>
-								    <th>Project</th>
-								    <th>Description</th>
-									<th>Technologies</th>
-								    <th>Video</th>
-								  </tr>
-								  <tr>
-								    <td>Facebook marketplace automation</td>
-								    <td>Fully automate Facebook marketplace listing creation, auto reply, chrome profile creation, login, language/location change and more...</td>
-									<td>UiPath, JavaScript</td>
-								    <td><a href="#" onclick="open_in_new_window('html_contents4', 'MyTitle', 'location=1,status=1,toolbar=1,scrollbars=1,resizeable=1,width=500,height=250');">Watch Video Here</a>
-									<div id="html_contents4" data-new-window> <!-- data-new-window is important -->
-									    <video controls style="width: 100%; height: auto;">
-									        <source src="video/fb marketplace final 1.mp4" type="video/mp4" />
-									    </video>
-									</div></td>
-								  </tr>
-								  			  
 								</table>
 							</div>
 
