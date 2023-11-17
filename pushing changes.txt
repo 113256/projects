@@ -8,5 +8,5 @@ if it doesnt show /Desktop/Programming/projects/projects-gh-pages (gh-pages)
 
 git checkout -b gh-pages to switch branch
 git add -A
-git commit -m "change to bootstrap 5.3"
+git commit -m "change title"
 git push origin gh-pages
