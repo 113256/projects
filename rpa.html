@@ -813,9 +813,10 @@ video {
         const pdfContainer = document.getElementById('pdfContainer');
         pdfContainer.innerHTML = ''; // Clear previous content if any
 
+        const scale = 1.5; // Increase scale for higher resolution
         for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
           const page = await pdf.getPage(pageNum);
-          const viewport = page.getViewport({ scale: 1 });
+          const viewport = page.getViewport({ scale: scale });
 
           const canvas = document.createElement('canvas');
           const context = canvas.getContext('2d');
