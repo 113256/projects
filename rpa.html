@@ -12,6 +12,11 @@
 		}
 
 
+		.container-smallx {
+			margin-left: 12%;
+			margin-right: 5%;
+		}
+
 		td, th {
   border: 1px solid #dddddd;
   text-align: left;
@@ -74,6 +79,7 @@ video {
   <a href="#top">Contact / Links</a>
   <a href="#Skills">Skills</a>
   <a href="#projectsList">UiPath Automation Projects List</a>
+  <a href="#generativeAI">Generative AI Projects List</a>  
   <a href="#Stock">Stock & Crypto Consolidation</a>
   <a href="#GenericFramework">UiPath Generic Framework</a>
 </div>
@@ -91,7 +97,7 @@ video {
 	
 
 			<div id="" class="section bg-light-gray">
-			<div class="container-small">
+			<div class="container-smallx">
 				<div id = "" class="section-heading">
 					<h2 class = "center">UiPath RPA Portfolio</h2>					
 				</div>
@@ -115,7 +121,7 @@ video {
 						    </tr>
 						    <tr>
 						      <th scope="row">Resume + Job references</th>
-						      <td><a href = "jack chan 2023 with reference english.pdf" download>Download</a></td>
+						      <td><a href = "jack chan 2024 with references english.pdf" download>Download</a></td>
 						    </tr>
 							<!--<tr>
 						      <th scope="row">Upwork</th>
@@ -125,6 +131,7 @@ video {
 						    
 						  </tbody>
 					</table>
+					<div id="pdfContainer" style="overflow-y: scroll; height: 600px;"></div>
 				</div>
 	
 			</div>
@@ -132,13 +139,14 @@ video {
 			
 			
 		<div id="Skills" class="section bg-light-gray">
-			<div class="container-small">
+			<div class="container-smallx">
 				<div id = "" class="section-heading">
 					<h2 class = "center">Skills and Hyperautomation Stack</h2>					
 				</div>
 				
 				<div class="section">
 					<img class = "" src = "img/HyperautomationStack.PNG" width = "100%" />
+					<img class = "" src = "img/frontendStack.png" width = "100%" />
 				</div>
 	
 			</div>
@@ -148,12 +156,12 @@ video {
 
 
 		<div id="projectsList" class="section bg-light-gray">
-					<div class="container-small">
+					<div class="container-smallx">
 						<div id = "" class="section-heading">
 							<h2 class = "center">UiPath Automation Projects List</h2>
 						</div>
 						<div class="section">
-							<div class = "alert alert-success"><p>Some of my personal RPA projects and experience</p></div>
+							<div class = "alert alert-success"><p>Personal and freelance RPA projects and experience</p></div>
 							
 							<div class = "row">
 							
@@ -161,7 +169,6 @@ video {
 							
 							<div class="d-flex align-items-start">
 							  <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-								<button class="nav-link active" id="v-pills-ai-tab" data-bs-toggle="pill" data-bs-target="#v-pills-ai" type="button" role="tab" aria-controls="v-pills-ai" aria-selected="true">Generative AI</button>
 								<button class="nav-link" id="v-pills-recruitment-tab" data-bs-toggle="pill" data-bs-target="#v-pills-recruitment" type="button" role="tab" aria-controls="v-pills-recruitment" aria-selected="false">Recruitment and HR Automation</button>
 								<button class="nav-link" id="v-pills-travel-tab" data-bs-toggle="pill" data-bs-target="#v-pills-travel" type="button" role="tab" aria-controls="v-pills-travel" aria-selected="false">Travel Agency Automation</button>
 								<button class="nav-link" id="v-pills-digital-tab" data-bs-toggle="pill" data-bs-target="#v-pills-digital" type="button" role="tab" aria-controls="v-pills-digital" aria-selected="false">Digital Marketing Automation</button>
@@ -170,59 +177,8 @@ video {
 								<button class="nav-link" id="v-pills-qb-tab" data-bs-toggle="pill" data-bs-target="#v-pills-qb" type="button" role="tab" aria-controls="v-pills-qb" aria-selected="false">Quickbooks Automation</button>
 							  </div>
 							  <div class="tab-content" id="v-pills-tabContent">
-								<div class="tab-pane fade show active" id="v-pills-ai" role="tabpanel" aria-labelledby="v-pills-ai-tab" tabindex="0">
-									<h3><i>Generative AI</i></h3>
-								<ul>
-									<li>Chatbot integration with "talking avatar"</li>
-									<li>Chatbot that can answer questions on uploaded documents</li>
-									<li>Extract the data you want from documents, and generate insights and analysis</li>
-								</ul>
-								<table  class="table table-bordered">
-								  <tr>
-								    <th>Project</th>
-								    <th>Description</th>
-									<th>Technologies</th>
-								    <th>Video</th>
-								  </tr>
-								  
-								  <tr>
-								    <td>Chatbot that combine OpenAI and text-to-video tech</td>
-								    <td>By combining OpenAI's language processing capabilities with D-ID's text-to-video technology, this tool lets you upload a photo and turn it into a "Speaking portrait", allowing you to interact with it!</td>
-									<td>NodeJS, OpenAI, D-ID</td>
-								    <td><a class = "nolink" onclick="open_in_new_window('html_contents_did', 'OpenAI and D-ID', 'location=1,status=1,toolbar=1,scrollbars=1,resizeable=1,width=500,height=250');">Watch Video Here</a>
-									<div id="html_contents_did" data-new-window> <!-- data-new-window is important -->
-									    <video controls style="width: 100%; height: auto;">
-									        <source src="video/openAI and d-id.mp4" type="video/mp4" />
-									    </video>
-									</div></td>
-								  </tr>	
-								  <tr>
-								    <td>Upload documents and ask questions about these documents</td>
-								    <td>Web application where you can upload any document (of ANY size/page count), and ask questions about these documents. The questions and answers will be stored on the web app</td>
-									<td>NodeJS, OpenAI, Langchain, SQL</td>
-								    <td><a class = "nolink" onclick="open_in_new_window('html_contents_langchain', 'MyTitle', 'location=1,status=1,toolbar=1,scrollbars=1,resizeable=1,width=500,height=250');">Watch Video Here</a>
-									<div id="html_contents_langchain" data-new-window> <!-- data-new-window is important -->
-									    <video controls style="width: 100%; height: auto;">
-									        <source src="video/langchain app.mp4" type="video/mp4" />
-									    </video>
-									</div></td>
-								  </tr>			
 
-								<tr>
-								    <td>Generative AI Tool for Insurance</td>
-								    <td>1. Automatically extract key information from uploaded theft forms, and generate verdict (approve/decline) as well as give a reason for the verdict. 2. Allow claims officers to ask questions about the claim and about the policy via chatbot.   3. Automatically generate an email reply to the claimant with the results of the claims analysis</td>
-									<td>NodeJS, OpenAI, Langchain</td>
-								    <td><a class = "nolink" onclick="open_in_new_window('html_contents_insurance', 'MyTitle', 'location=1,status=1,toolbar=1,scrollbars=1,resizeable=1,width=500,height=250');">Watch Video Here</a>
-									<div id="html_contents_insurance" data-new-window> <!-- data-new-window is important -->
-									    <video controls style="width: 100%; height: auto;">
-									        <source src="video/insurance ai demo.mp4" type="video/mp4" />
-									    </video>
-									</div></td>
-								  </tr>	
-								  
-								</table>
-								</div>
-								<div class="tab-pane fade" id="v-pills-recruitment" role="tabpanel" aria-labelledby="v-pills-recruitment-tab" tabindex="0">
+								<div class="tab-pane fade show active" id="v-pills-recruitment" role="tabpanel" aria-labelledby="v-pills-recruitment-tab" tabindex="0">
 									<h3><i>Recruitment / HR Automation</i></h3>
 								<img class = "" src = "img/HR.PNG" width = "100%" />
 								
@@ -471,8 +427,132 @@ video {
 					
 					</div>
 		</div>
+
+
+		<div id="generativeAI" class="section bg-light-gray">
+					<div class="container-smallx">
+						<div id = "" class="section-heading">
+							<h2 class = "center">Generative AI Projects List</h2>
+						</div>
+						<div class="section">
+							<div class = "alert alert-success"><p>GenAI Web Applications</p></div>
+							
+							<div class = "row">
+							
+							
+							
+							<div class="d-flex align-items-start">
+
+							  <div class="tab-content" id="v-pills-tabContent">
+								<div class="tab-pane fade show active" id="v-pills-ai" role="tabpanel" aria-labelledby="v-pills-ai-tab" tabindex="0">
+									<h3><i>Generative AI</i></h3>
+								<ul>
+									<li>Chatbot integration with "talking avatar"</li>
+									<li>Chatbot that can answer questions on uploaded documents</li>
+									<li>Extract the data you want from documents, and generate insights and analysis</li>
+								</ul>
+								<table  class="table table-bordered">
+								  <tr>
+								    <th>Project</th>
+								    <th>Description</th>
+									<th>Technologies</th>
+								    <th>Video</th>
+								  </tr>
+								  
+								  <tr>
+								    <td>Chatbot that combine OpenAI and text-to-video tech</td>
+								    <td>By combining OpenAI's language processing capabilities with D-ID's text-to-video technology, this tool lets you upload a photo and turn it into a "Speaking portrait", allowing you to interact with it!</td>
+									<td>NodeJS, OpenAI, D-ID</td>
+								    <td><a class = "nolink" onclick="open_in_new_window('html_contents_did', 'OpenAI and D-ID', 'location=1,status=1,toolbar=1,scrollbars=1,resizeable=1,width=500,height=250');">Watch Video Here</a>
+									<div id="html_contents_did" data-new-window> <!-- data-new-window is important -->
+									    <video controls style="width: 100%; height: auto;">
+									        <source src="video/openAI and d-id.mp4" type="video/mp4" />
+									    </video>
+									</div></td>
+								  </tr>	
+								  <tr>
+								    <td>Upload documents and ask questions about these documents</td>
+								    <td>Web application where you can upload any document (of ANY size/page count), and ask questions about these documents. The questions and answers will be stored on the web app</td>
+									<td>NodeJS, OpenAI, Langchain, SQL</td>
+								    <td><a class = "nolink" onclick="open_in_new_window('html_contents_langchain', 'MyTitle', 'location=1,status=1,toolbar=1,scrollbars=1,resizeable=1,width=500,height=250');">Watch Video Here</a>
+									<div id="html_contents_langchain" data-new-window> <!-- data-new-window is important -->
+									    <video controls style="width: 100%; height: auto;">
+									        <source src="video/langchain app.mp4" type="video/mp4" />
+									    </video>
+									</div></td>
+								  </tr>			
+
+								<tr>
+								    <td>Generative AI Tool for Insurance</td>
+								    <td>1. Automatically extract key information from uploaded theft forms, and generate verdict (approve/decline) as well as give a reason for the verdict. 2. Allow claims officers to ask questions about the claim and about the policy via chatbot.   3. Automatically generate an email reply to the claimant with the results of the claims analysis</td>
+									<td>NodeJS, OpenAI, Langchain</td>
+								    <td><a class = "nolink" onclick="open_in_new_window('html_contents_insurance', 'MyTitle', 'location=1,status=1,toolbar=1,scrollbars=1,resizeable=1,width=500,height=250');">Watch Video Here</a>
+									<div id="html_contents_insurance" data-new-window> <!-- data-new-window is important -->
+									    <video controls style="width: 100%; height: auto;">
+									        <source src="video/insurance ai demo.mp4" type="video/mp4" />
+									    </video>
+									</div></td>
+								  </tr>	
+								 
+
+								<tr>
+								    <td>Medical Article Generation</td>
+								    <td>Generate medical article based on provided title, description as well as reference articles that user can upload</td>
+									<td>NodeJS, OpenAI, Langchain</td>
+								    <td><a class = "nolink" onclick="open_in_new_window('aiWriting', 'MyTitle', 'location=1,status=1,toolbar=1,scrollbars=1,resizeable=1,width=500,height=250');">Watch Video Here</a>
+									<div id="aiWriting" data-new-window> <!-- data-new-window is important -->
+									    <video controls style="width: 100%; height: auto;">
+									        <source src="video/aiWriting.mp4" type="video/mp4" />
+									    </video>
+									</div></td>
+								  </tr>	
+
+								<tr>
+								    <td>Test Case Generator</td>
+								    <td>Generate test cases from a process definition document</td>
+									<td>NodeJS, OpenAI</td>
+								    <td><a class = "nolink" onclick="open_in_new_window('testCase', 'MyTitle', 'location=1,status=1,toolbar=1,scrollbars=1,resizeable=1,width=500,height=250');">Watch Video Here</a>
+									<div id="testCase" data-new-window> <!-- data-new-window is important -->
+									    <video controls style="width: 100%; height: auto;">
+									        <source src="video/testCase.mp4" type="video/mp4" />
+									    </video>
+									</div></td>
+								  </tr>
+
+
+
+								</table>
+								</div>
+
+								
+
+
+							  </div>
+							</div>
+							
+							
+							
+							
+	
+								
+								
+
+								
+
+
+								
+								
+								
+							</div>
+
+						</div>
+					
+					
+					</div>
+		</div>
+
 		<div id="Stock" class="section bg-light-gray">
-			<div class="container-small">
+			<div class="container-smallx">
 
 				<div id = "" class="section-heading">
 
@@ -598,7 +678,7 @@ video {
 
 
 		<div id="GenericFramework" class="section bg-light-gray">
-			<div class="container-small">
+			<div class="container-smallx">
 				<div id = "" class="section-heading">
 
 					<h2 class = "center">Generic UiPath Framework</h2>
@@ -707,7 +787,48 @@ video {
 		<!-- jquery-->
 		<!--<script src="js/jquery-1.12.4.min.js"></script>-->
 		<!-- javascript-->
+		<script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      const pdfUrl = 'https://github.com/113256/cv/blob/main/jack%20chan%202024%20with%20references%20english.pdf'; // Update this path to your PDF file
+
+      try {
+        const response = await fetch(pdfUrl);
+        if (!response.ok) {
+          throw new Error('Failed to fetch PDF');
+        }
+        
+        const pdfData = await response.arrayBuffer();
+        const pdf = await pdfjsLib.getDocument({ data: pdfData }).promise;
+
+        // Display the PDF on the screen
+        const pdfContainer = document.getElementById('pdfContainer');
+        pdfContainer.innerHTML = ''; // Clear previous content if any
+
+        for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
+          const page = await pdf.getPage(pageNum);
+          const viewport = page.getViewport({ scale: 1 });
+
+          const canvas = document.createElement('canvas');
+          const context = canvas.getContext('2d');
+
+          canvas.height = viewport.height;
+          canvas.width = viewport.width;
+
+          const renderContext = {
+            canvasContext: context,
+            viewport: viewport
+          };
+
+          await page.render(renderContext).promise;
+          pdfContainer.appendChild(canvas);
+        }
+      } catch (error) {
+        console.error('Error loading PDF:', error);
+      }
+    });
+  </script>
 		<script src = "js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.7.570/pdf.min.js"></script>
 			<!-- Scrolling Nav JavaScript -->
     <!--<script src="js/jquery.easing.min.js"></script>-->
     <!--<script src="js/scrolling-nav.js"></script>-->
